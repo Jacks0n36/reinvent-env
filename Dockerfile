@@ -11,6 +11,8 @@ COPY reinvent.yml .
 
 RUN conda env create -f reinvent.yml
 
+RUN conda clean --all -y
+
 # Install pip manually in case it is missing in the environment
 RUN conda run -n reinvent.v3.2 python -m ensurepip --upgrade
 RUN conda run -n reinvent.v3.2 python -m pip install --upgrade pip setuptools wheel
