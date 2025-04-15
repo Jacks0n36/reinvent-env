@@ -23,5 +23,11 @@ RUN cd /home && \
     git clone https://github.com/connorcoley/scscore
 ENV PYTHONPATH=/home/Reinvent:/home/scscore
 
+RUN df -h
+
+RUN conda clean --all
+
+RUN df -h
+
 # Set the default shell to use bash and activate the conda environment
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "reinvent.v3.2"]
