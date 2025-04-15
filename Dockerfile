@@ -25,7 +25,7 @@ ENV PYTHONPATH=/home/Reinvent:/home/scscore
 
 RUN df -h
 
-RUN conda clean --all
+RUN conda clean --all -y
 
 RUN df -h
 
