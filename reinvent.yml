@@ -2,12 +2,14 @@ name: reinvent.v3.2
 channels:
   - rdkit
   - pytorch
+  - nvidia
   - anaconda
   - defaults
   - conda-forge
   - openeye
 dependencies:
   - python=3.10
+  - pytorch
   - pytorch-cuda
   - tensorflow
   - pathos
