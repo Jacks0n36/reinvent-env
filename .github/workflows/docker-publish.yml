@@ -34,7 +34,14 @@ jobs:
 
     steps:
 
-      - name: Check disk space before build
+      - name: Check disk space before cleanup
+        run: df -h
+      
+      - name: Cleanup
+        run: sudo rm -rf /usr/share/dotnet
+             sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
+      - name: Check disk space after cleanup
         run: df -h
 
       - name: Checkout repository
