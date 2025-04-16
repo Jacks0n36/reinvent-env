@@ -110,4 +110,4 @@ jobs:
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
 
       - name: Report size of Docker image
-        run: docker image ls --format "{{.Repository}}: {{.Size}}"
+        run: docker images --format "table {{.Repository}}\t{{.Size}}"
