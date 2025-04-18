@@ -25,6 +25,7 @@ RUN cd /home && \
     git clone -b plugins https://github.com/Tabor-Research-Group/Reinvent && \
     git clone https://github.com/connorcoley/scscore
 ENV PYTHONPATH=/home/Reinvent:/home/scscore
+ENV PATH=/opt/conda/bin:$PATH
 
 # Set the default shell to use bash and activate the conda environment
 ENTRYPOINT ["conda", "run", "--no-capture-output", "-n", "reinvent.v3.2"]

@@ -15,7 +15,6 @@ dependencies:
   - pathos
   - numpy
   - pandas
-  - scipy
   - h5py
   - ipykernel
   - scikit-learn
