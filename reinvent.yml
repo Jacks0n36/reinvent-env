@@ -9,11 +9,11 @@ channels:
   - openeye
 dependencies:
   - python=3.10
-  - pytorch
+  - pytorch::pytorch
   - pytorch-cuda
   - tensorflow
   - pathos
-  - numpy<2.0
+  - numpy
   - pandas
   - h5py
   - ipykernel
@@ -24,6 +24,7 @@ dependencies:
   - openeye-toolkits
   - pip
   - rdkit
+  - scipy
   - pip:
       - git+https://github.com/Tabor-Research-Group/reinvent-chemistry
       - git+https://github.com/Tabor-Research-Group/reinvent-models
