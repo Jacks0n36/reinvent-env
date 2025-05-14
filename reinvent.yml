@@ -1,4 +1,4 @@
-name: reinvent.v3.2
+name: reinvent.v3.2_
 channels:
   - rdkit
   - pytorch
@@ -13,7 +13,7 @@ dependencies:
   - pytorch-cuda
   - tensorflow
   - pathos
-  - numpy
+  - numpy<2.0
   - pandas
   - h5py
   - ipykernel
