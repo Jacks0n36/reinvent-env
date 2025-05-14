@@ -1,4 +1,4 @@
-name: reinvent.v3.2_
+name: reinvent.v3.2
 channels:
   - rdkit
   - pytorch
