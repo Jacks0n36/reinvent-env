@@ -19,13 +19,18 @@ dependencies:
   - ipykernel
   - scikit-learn
   - chemprop
+  - rdkit
+  - scipy
   - pydantic
   - dacite
   - openeye-toolkits
   - pip
-  - rdkit
-  - scipy
+  - postgresql
   - pip:
       - git+https://github.com/Tabor-Research-Group/reinvent-chemistry
       - git+https://github.com/Tabor-Research-Group/reinvent-models
       - git+https://github.com/Tabor-Research-Group/reinvent-scoring
+      - jinja2
+      - sqlalchemy
+      - psycopg2
+
