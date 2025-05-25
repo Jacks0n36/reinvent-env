@@ -109,5 +109,3 @@ jobs:
         # against the sigstore community Fulcio instance.
         run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
 
-      - name: Report size of Docker image
-        run: docker images --format "table {{.Repository}}\t{{.Size}}"
