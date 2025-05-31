@@ -22,7 +22,7 @@ RUN conda create "python>=3.8,<3.10" -n aizynth && \
     pip cache purge
 
 RUN cd /home && \
-    git clone -b plugins https://github.com/Tabor-Research-Group/Reinvent && \
+    git clone -b plugins https://github.com/Jacks0n36/Reinvent && \
     git clone https://github.com/connorcoley/scscore
 ENV PYTHONPATH=/home/Reinvent:/home/scscore
 ENV PATH=/opt/conda/bin:$PATH
