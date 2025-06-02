@@ -21,6 +21,7 @@ RUN conda create "python>=3.8,<3.10" -n aizynth && \
     conda clean --all -afy && \
     pip cache purge
 
+ARG CACHEBUST
 RUN cd /home && \
     git clone -b plugins https://github.com/Jacks0n36/Reinvent && \
     git clone https://github.com/connorcoley/scscore
